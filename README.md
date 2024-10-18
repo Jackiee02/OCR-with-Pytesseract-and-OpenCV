@@ -41,6 +41,4 @@ Upload the notebook to Google Colab or any Jupyter Notebook environment and ensu
 
 Ensure that images are stored in a Google Drive directory if working in Colab, and update the paths to match your directory structure.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
