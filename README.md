@@ -6,6 +6,19 @@ The goal of this project is to detect and extract text from images using OpenCV 
 
 The code runs in a Jupyter Notebook format on Google Colab and is designed to work with images stored in Google Drive. The goal of the project is to efficiently extract text from images while optimizing for both speed and accuracy.
 
+## Project Outline
+
+This notebook includes a step-by-step guide for:
+
+1. Preprocessing images for optimal OCR results.
+2. Getting boxes around text
+3. Getting boxes around text words
+4. Text template matching
+5. Custom detection, only numbers
+6. Blacklisting characters
+7. Script, run in loop for read pages
+8. Evaluate the accuracy of detected text
+   
 ## Features
 
 - Image preprocessing (grayscale, noise removal, thresholding, etc.)
