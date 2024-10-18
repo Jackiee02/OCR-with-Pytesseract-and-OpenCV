@@ -1,33 +1,42 @@
-# OCR System using OpenCV and Pytesseract
+# OCR System using Pytesseract and OpenCV
 
-## Introduction
-
-This project implements an Optical Character Recognition (OCR) system using OpenCV for image preprocessing and Pytesseract for text extraction. It demonstrates various techniques for image enhancement, such as grayscale conversion, thresholding, dilation, and edge detection, to improve the accuracy of the OCR process. The system can also evaluate the confidence score of detected text and perform template matching for specific patterns, such as dates.
-
-The code runs in a Jupyter Notebook format on Google Colab and is designed to work with images stored in Google Drive. The goal of the project is to efficiently extract text from images while optimizing for both speed and accuracy.
+This project demonstrates the implementation of an Optical Character Recognition (OCR) system using Pytesseract and OpenCV. The system is designed to preprocess images, extract text from images using Tesseract OCR, and evaluate the accuracy of the detected text. The preprocessing techniques include grayscale conversion, thresholding, noise removal, and edge detection to optimize OCR results.
 
 ## Features
 
-- Image preprocessing (grayscale, noise removal, thresholding, etc.)
-- Text extraction using Pytesseract
-- Bounding box creation around detected text
-- Confidence score evaluation of the detected text
-- Custom text detection (e.g., numbers only, blacklisting characters)
-- Template matching for specific patterns (e.g., dates)
-- Performance evaluation in terms of time taken for each process
+- **Image Preprocessing**: Includes techniques like grayscale conversion, noise removal, thresholding, and edge detection to enhance the image for better OCR accuracy.
+- **Text Detection and Extraction**: Pytesseract is used to detect and extract text from images. Various configurations are applied to customize the OCR process.
+- **Bounding Boxes**: Bounding boxes are drawn around detected text to visually represent the location of the extracted text.
+- **Text Accuracy Evaluation**: The confidence score of the extracted text is calculated to measure the accuracy of the OCR process.
 
 ## Prerequisites
 
-- Google Colab or Jupyter Notebook environment
-- OpenCV and Pytesseract libraries installed
-- Tesseract-OCR installed on the system
+Before running the notebook, ensure that you have installed the following:
+
+- OpenCV
+- Tesseract OCR
+- Pytesseract
+- Numpy
+
+You will also need access to Google Colab or Jupyter Notebook to run the code.
+
+## Setup
+
+To run this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Upload the Jupyter Notebook file to Google Colab or open it in Jupyter Notebook.
+3. Install the required dependencies as outlined in the notebook.
 
 ## Usage
 
-Upload the notebook to Google Colab or any Jupyter Notebook environment and ensure that the necessary libraries are installed. The notebook contains cells that can be run sequentially to process images and extract text.
+This notebook includes a step-by-step guide for:
 
-Ensure that images are stored in a Google Drive directory if working in Colab, and update the paths to match your directory structure.
+1. Preprocessing images for optimal OCR results.
+2. Extracting text from images using Pytesseract.
+3. Visualizing text detection with bounding boxes.
+4. Evaluating the accuracy of the extracted text.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
